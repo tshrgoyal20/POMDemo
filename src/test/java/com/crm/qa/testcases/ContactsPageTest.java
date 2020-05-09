@@ -9,6 +9,7 @@ import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.ContactsPage;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
+import com.crm.qa.util.ExcelDataProvider;
 import com.crm.qa.util.TestUtil;
 
 public class ContactsPageTest extends TestBase {
@@ -17,6 +18,7 @@ public class ContactsPageTest extends TestBase {
 	HomePage homePage;
 	TestUtil testutil;
 	ContactsPage contactsPage;
+	ExcelDataProvider exceldata;
 	
 	public ContactsPageTest()
 	{
@@ -30,6 +32,7 @@ public class ContactsPageTest extends TestBase {
 		loginPage = new LoginPage();
 		contactsPage = new ContactsPage();
 		loginPage.clickOnLogin();
+		exceldata = new ExcelDataProvider();
 		TestUtil.ImplicitWait();
 		homePage = loginPage.SignIn(prop.getProperty("username"), prop.getProperty("password"));
 		homePage.clickOnContactsLink();
@@ -38,7 +41,7 @@ public class ContactsPageTest extends TestBase {
 	@AfterMethod
 	public void close()
 	{
-		TestUtil.Sleep(3000);
+		TestUtil.Sleep(2000);
 		closeBrowser();
 	}
 	
@@ -52,8 +55,6 @@ public class ContactsPageTest extends TestBase {
 	@Test(priority=2)
 	public void selectContactsTest()
 	{
-		//driver.findElement(By.xpath("//div[@id='ui']//span[text()='Home']")).click();
-		//driver.findElement(By.xpath("//div[@id='ui']//span[text()='Contacts']")).click();
 		TestUtil.ImplicitWait();
 		contactsPage.selectContactsByName("User 1");
 	}
@@ -62,9 +63,11 @@ public class ContactsPageTest extends TestBase {
 	public void verifyCreateNewContact()
 	{
 		contactsPage.clickOnNewContactButton();
-		driver.navigate().refresh();
-		//contactsPage.ExplicitWait();
-		contactsPage.createNewContact("Tushar", "Kumar", "Google", "abc@gamil.com");
+		//contactsPage.createNewContact(DataDriven.firstnamedata, DataDriven.lastnamedata, DataDriven.companynamedata, DataDriven.statusdata);
+		contactsPage.createNewContact(exceldata.getStringData("NewContact", 1, 0), exceldata.getStringData("NewContact", 1, 1), exceldata.getStringData("NewContact", 1, 2), exceldata.getStringData("NewContact", 1, 3));
+		contactsPage.verifycreatedcontact();
+		Assert.assertEquals(contactsPage.verifycreatedcontact(), "Ram Kumar");
+		System.out.println("Created user is: "+contactsPage.verifycreatedcontact());
 	}
 
 }

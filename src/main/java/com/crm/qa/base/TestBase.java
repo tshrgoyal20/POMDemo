@@ -8,13 +8,20 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.firefox.FirefoxDriver;
+import com.crm.qa.util.ExcelDataProvider;
 import com.crm.qa.util.TestUtil;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 	
 	public static WebDriver driver;
 	public static Properties prop;
+	public static ExcelDataProvider exceldata;
+	/*ExtentSparkReporter htmlreporter;
+	public static ExtentReports extent;
+	public static ExtentTest extenttest;*/
 	
 	public TestBase() {
 		
@@ -42,8 +49,19 @@ public class TestBase {
 		if(browserName.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.silentOutput", "true");
-			System.setProperty("webdriver.chrome.driver", "//home//tushar//Downloads//chromedriver_linux64 (3)//chromedriver");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
+		}
+		else if(browserName.equals("firefox"))
+		{
+			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,".\\CRMPRoject\\log.txt");
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		}
+		else
+		{
+			System.out.println("Please enter valid browser like chrome or firefox");
 		}
 		
 		driver.manage().window().maximize();
@@ -58,5 +76,17 @@ public class TestBase {
 	{
 		driver.close();
 	}
+	
+	/*public void setExtent()
+	{
+		htmlreporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/Reports/MyReport.html");
+		extent = new ExtentReports();
+		extent.attachReporter(htmlreporter);
+	}
+	
+	public void endReport()
+	{
+		extent.flush();
+	}*/
 
 }
