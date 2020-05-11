@@ -32,7 +32,8 @@ public class ContactsPageTest extends TestBase {
 		loginPage = new LoginPage();
 		contactsPage = new ContactsPage();
 		loginPage.clickOnLogin();
-		exceldata = new ExcelDataProvider();
+		exceldata = new ExcelDataProvider("/home/tushar/eclipse-workspace/CRMPRoject/src/main/"
+				+ "java/com/crm/qa/testdata/ExcelData.xlsx");
 		TestUtil.ImplicitWait();
 		homePage = loginPage.SignIn(prop.getProperty("username"), prop.getProperty("password"));
 		homePage.clickOnContactsLink();
@@ -59,15 +60,32 @@ public class ContactsPageTest extends TestBase {
 		contactsPage.selectContactsByName("User 1");
 	}
 	
+	/*@DataProvider
+	public Iterator<Object> getTestData()
+	{
+		ArrayList<Object> testdata = DataDriven.GetData();
+		return testdata.iterator();
+	}*/
+	
 	@Test(priority=3)
 	public void verifyCreateNewContact()
 	{
-		contactsPage.clickOnNewContactButton();
-		//contactsPage.createNewContact(DataDriven.firstnamedata, DataDriven.lastnamedata, DataDriven.companynamedata, DataDriven.statusdata);
-		contactsPage.createNewContact(exceldata.getStringData("NewContact", 1, 0), exceldata.getStringData("NewContact", 1, 1), exceldata.getStringData("NewContact", 1, 2), exceldata.getStringData("NewContact", 1, 3));
-		contactsPage.verifycreatedcontact();
-		Assert.assertEquals(contactsPage.verifycreatedcontact(), "Ram Kumar");
-		System.out.println("Created user is: "+contactsPage.verifycreatedcontact());
+		int rowCount = ExcelDataProvider.sheet.getPhysicalNumberOfRows();
+		System.out.println("Total no. of rows: "+rowCount);
+		for(int row=1; row<rowCount; row++)
+		{
+			contactsPage.clickOnNewContactButton();
+			System.out.println("Row no. "+row);
+			contactsPage.createNewContact(exceldata.getStringData("NewContact", row, 0),
+					exceldata.getStringData("NewContact", row, 1), exceldata.getStringData("NewContact", row, 2),
+					exceldata.getStringData("NewContact", row, 3));
+		
+			contactsPage.verifycreatedcontact();
+			//Assert.assertEquals(contactsPage.verifycreatedcontact(), "Ram Kumar");
+			System.out.println("Created user is: "+contactsPage.verifycreatedcontact());
+			homePage.clickOnContactsLink();
+			TestUtil.Sleep(1000);
+		}
 	}
 
 }

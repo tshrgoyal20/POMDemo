@@ -16,10 +16,9 @@ public class ExcelDataProvider extends TestBase {
 	public String companydata;
 	public String statusdata;
 	
-	public ExcelDataProvider()
+	public ExcelDataProvider(String path)
 	{
-		File file  = new File("/home/tushar/eclipse-workspace/CRMPRoject/src/main/"
-				+ "java/com/crm/qa/testdata/ExcelData.xlsx");
+		File file  = new File(path);
 		
 		try
 		{
@@ -46,21 +45,4 @@ public class ExcelDataProvider extends TestBase {
 		return wb.getSheet(sheetName).getRow(row).getCell(column).getNumericCellValue();
 	}
 	
-	/*public void getSheetData()
-	{	
-		fnamedata = exceldata.getStringData("NewContact", 1, 0);
-		lnamedata = exceldata.getStringData("NewContact", 1, 1);
-		companydata = exceldata.getStringData("NewContact", 1, 2);
-		statusdata = exceldata.getStringData("NewContact", 1, 3);
-	}*/
-	
-	/*public void getRows()
-	{
-		int rowCount = sheet.getPhysicalNumberOfRows();
-		System.out.println(rowCount);
-		for(int row=1; row<=rowCount; row++)
-		{
-			System.out.println(row);
-		}
-	}*/
 }
