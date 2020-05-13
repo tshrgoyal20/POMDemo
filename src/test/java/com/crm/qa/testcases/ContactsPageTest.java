@@ -57,15 +57,9 @@ public class ContactsPageTest extends TestBase {
 	public void selectContactsTest()
 	{
 		TestUtil.ImplicitWait();
-		contactsPage.selectContactsByName("User 1");
+		boolean b = contactsPage.selectContactsByName("User 1");
+		Assert.assertTrue(b);
 	}
-	
-	/*@DataProvider
-	public Iterator<Object> getTestData()
-	{
-		ArrayList<Object> testdata = DataDriven.GetData();
-		return testdata.iterator();
-	}*/
 	
 	@Test(priority=3)
 	public void verifyCreateNewContact()
@@ -87,5 +81,12 @@ public class ContactsPageTest extends TestBase {
 			TestUtil.Sleep(1000);
 		}
 	}
+	
+	/*@DataProvider
+	public Iterator<Object> getTestData()
+	{
+		ArrayList<Object> testdata = DataDriven.GetData();
+		return testdata.iterator();
+	}*/
 
 }

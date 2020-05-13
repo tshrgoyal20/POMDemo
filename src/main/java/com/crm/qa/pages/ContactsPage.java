@@ -47,9 +47,11 @@ public class ContactsPage extends TestBase {
 		return contactsLabel.isDisplayed();
 	}
 	
-	public void selectContactsByName(String name)
+	public boolean selectContactsByName(String name)
 	{
-		driver.findElement(By.xpath("//td[text()='"+name+"']//preceding-sibling::td/div")).click();
+		WebElement contactselect = driver.findElement(By.xpath("//td[text()='"+name+"']//preceding-sibling::td/div"));
+		contactselect.click();
+		return contactselect.isSelected();
 		//div[@id='dashboard-toolbar']//following-sibling::div[contains(@class,'main-content')]//div//
 	}
 	

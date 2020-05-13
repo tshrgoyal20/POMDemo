@@ -58,6 +58,7 @@ public class HomePageTest extends TestBase {
 	public void verifyContactsLinkTest()
 	{
 		contactsPage = homePage.clickOnContactsLink();
+		Assert.assertTrue(contactsPage.verifyContactsLabel());
 	}
 
 }

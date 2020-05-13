@@ -1,11 +1,15 @@
 package com.crm.qa.base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -75,6 +79,16 @@ public class TestBase {
 	public static void closeBrowser()
 	{
 		driver.close();
+	}
+	
+	public void failed(String testMethodName)
+	{
+		File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(file, new File("./Screenshots/"+testMethodName+".jpg"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	/*public void setExtent()
