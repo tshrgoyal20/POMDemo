@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="8" failures="2" name="TestSuite" time="53.209" errors="0" skipped="0">
+  <properties>
+    <property name="DISPLAY" value=":0"/>
+    <property name="CLUTTER_IM_MODULE" value="xim"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="LOGNAME" value="tushar"/>
+    <property name="VTE_VERSION" value="5202"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="PWD" value="/home/tushar/Documents/Jenkins"/>
+    <property name="JENKINS_URL" value="http://localhost:8080/jenkins/"/>
+    <property name="sun.font.fontmanager" value="sun.awt.X11FontManager"/>
+    <property name="GDMSESSION" value="ubuntu"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="GPG_AGENT_INFO" value="/run/user/1000/gnupg/S.gpg-agent:0:1"/>
+    <property name="java.version" value="11.0.7"/>
+    <property name="TEXTDOMAIN" value="im-config"/>
+    <property name="JOB_NAME" value="FreeCRMProject"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
+    <property name="XDG_DATA_DIRS" value="/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop"/>
+    <property name="java.version.date" value="2020-04-14"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="user.name" value="tushar"/>
+    <property name="XDG_RUNTIME_DIR" value="/run/user/1000"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="XDG_SESSION_DESKTOP" value="ubuntu"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/jenkins/job/FreeCRMProject/3/display/redirect?page=changes"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="path.separator" value=":"/>
+    <property name="BUILD_TAG" value="jenkins-FreeCRMProject-3"/>
+    <property name="TERM" value="xterm-256color"/>
+    <property name="GTK_MODULES" value="gail:atk-bridge"/>
+    <property name="MANDATORY_PATH" value="/usr/share/gconf/ubuntu.mandatory.path"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="PATH" value="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"/>
+    <property name="QT_ACCESSIBILITY" value="1"/>
+    <property name="DESKTOP_SESSION" value="ubuntu"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main /home/tushar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/TestMaven /home/tushar/.jenkins/war/WEB-INF/lib/remoting-4.3.jar /home/tushar/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.13.jar /home/tushar/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.13.jar 45377"/>
+    <property name="HUDSON_URL" value="http://localhost:8080/jenkins/"/>
+    <property name="XDG_CONFIG_DIRS" value="/etc/xdg/xdg-ubuntu:/etc/xdg"/>
+    <property name="JENKINS_SERVER_COOKIE" value="3c894d2d46a4dd8a"/>
+    <property name="EXECUTOR_NUMBER" value="1"/>
+    <property name="XDG_SESSION_TYPE" value="x11"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="user.language" value="en"/>
+    <property name="line.separator" value="
+"/>
+    <property name="COLORTERM" value="truecolor"/>
+    <property name="BUILD_URL" value="http://localhost:8080/jenkins/job/FreeCRMProject/3/"/>
+    <property name="SSH_AGENT_PID" value="1545"/>
+    <property name="SHLVL" value="1"/>
+    <property name="M2_HOME" value="/home/tushar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/TestMaven"/>
+    <property name="USER" value="tushar"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="BUILD_DISPLAY_NAME" value="#3"/>
+    <property name="WINDOWPATH" value="2"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="GJS_DEBUG_OUTPUT" value="stderr"/>
+    <property name="HUDSON_SERVER_COOKIE" value="3c894d2d46a4dd8a"/>
+    <property name="WORKSPACE_TMP" value="/home/tushar/.jenkins/workspace/FreeCRMProject@tmp"/>
+    <property name="MAVEN_HOME" value="/home/tushar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/TestMaven"/>
+    <property name="GNOME_TERMINAL_SERVICE" value=":1.78"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="SESSION_MANAGER" value="local/tushar-VPCEH3AEN:@/tmp/.ICE-unix/1467,unix/tushar-VPCEH3AEN:/tmp/.ICE-unix/1467"/>
+    <property name="DEFAULTS_PATH" value="/usr/share/gconf/ubuntu.default.path"/>
+    <property name="maven3.interceptor.common" value="/home/tushar/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.13.jar"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="GNOME_DESKTOP_SESSION_ID" value="this-is-deprecated"/>
+    <property name="XAUTHORITY" value="/run/user/1000/gdm/Xauthority"/>
+    <property name="LESSCLOSE" value="/usr/bin/lesspipe %s %s"/>
+    <property name="XDG_MENU_PREFIX" value="gnome-"/>
+    <property name="XDG_CURRENT_DESKTOP" value="ubuntu:GNOME"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="BUILD_NUMBER" value="3"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="maven3.interceptor" value="/home/tushar/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.13.jar"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="GJS_DEBUG_TOPICS" value="JS ERROR;JS LOG"/>
+    <property name="QT_IM_MODULE" value="ibus"/>
+    <property name="POM_GROUPID" value="FreeCRMPRoject"/>
+    <property name="POM_ARTIFACTID" value="CRMPRoject"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="DBUS_SESSION_BUS_ADDRESS" value="unix:path=/run/user/1000/bus"/>
+    <property name="JOB_URL" value="http://localhost:8080/jenkins/job/FreeCRMProject/"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/jenkins/job/FreeCRMProject/3/display/redirect"/>
+    <property name="GNOME_SHELL_SESSION_MODE" value="ubuntu"/>
+    <property name="JENKINS_HOME" value="/home/tushar/.jenkins"/>
+    <property name="BUILD_ID" value="3"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="TEXTDOMAINDIR" value="/usr/share/locale/"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
+    <property name="GTK_IM_MODULE" value="ibus"/>
+    <property name="HUDSON_HOME" value="/home/tushar/.jenkins"/>
+    <property name="PATH+MAVEN" value="/home/tushar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/TestMaven/bin"/>
+    <property name="OLDPWD" value="/home"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="SHELL" value="/bin/bash"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="JOB_DISPLAY_URL" value="http://localhost:8080/jenkins/job/FreeCRMProject/display/redirect"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="os.version" value="4.15.0-99-generic"/>
+    <property name="user.home" value="/home/tushar"/>
+    <property name="USERNAME" value="tushar"/>
+    <property name="_" value="/usr/bin/java"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="IM_CONFIG_PHASE" value="2"/>
+    <property name="user.dir" value="/home/tushar/eclipse-workspace/CRMPRoject"/>
+    <property name="maven.conf" value="/home/tushar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/TestMaven/conf"/>
+    <property name="XDG_VTNR" value="2"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vm.version" value="11.0.7+10-post-Ubuntu-2ubuntu218.04"/>
+    <property name="java.class.path" value="/home/tushar/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-agent-1.13.jar:/home/tushar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/TestMaven/boot/plexus-classworlds-2.6.0.jar:/home/tushar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/TestMaven/conf/logging"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="XDG_SEAT" value="seat0"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="WORKSPACE" value="/home/tushar/.jenkins/workspace/FreeCRMProject"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="LANG" value="en_IN"/>
+    <property name="LESSOPEN" value="| /usr/bin/lesspipe %s"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="file.separator" value="/"/>
+    <property name="LANGUAGE" value="en_IN:en"/>
+    <property name="java.runtime.version" value="11.0.7+10-post-Ubuntu-2ubuntu218.04"/>
+    <property name="XDG_SESSION_ID" value="2"/>
+    <property name="QT4_IM_MODULE" value="xim"/>
+    <property name="user.country" value="IN"/>
+    <property name="POM_PACKAGING" value="jar"/>
+    <property name="maven.home" value="/home/tushar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/TestMaven"/>
+    <property name="JOB_BASE_NAME" value="FreeCRMProject"/>
+    <property name="XMODIFIERS" value="@im=ibus"/>
+    <property name="GNOME_TERMINAL_SCREEN" value="/org/gnome/Terminal/screen/3a0b8e8b_77b0_4349_87a4_b86b0de200be"/>
+    <property name="HOME" value="/home/tushar"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="SSH_AUTH_SOCK" value="/run/user/1000/keyring/ssh"/>
+    <property name="LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="POM_DISPLAYNAME" value="CRMPRoject"/>
+    <property name="sun.arch.data.model" value="64"/>
+  </properties>
+  <testcase classname="com.crm.qa.testcases.LoginPageTest" name="loginPageTitleTest" time="0.308"/>
+  <testcase classname="com.crm.qa.testcases.LoginPageTest" name="signInTest" time="4.536"/>
+  <testcase classname="com.crm.qa.testcases.HomePageTest" name="verifyHomePageTitleTest" time="0.01"/>
+  <testcase classname="com.crm.qa.testcases.HomePageTest" name="verifyCorrectUsernameTest" time="1.905"/>
+  <testcase classname="com.crm.qa.testcases.HomePageTest" name="verifyContactsLinkTest" time="2.887"/>
+  <testcase classname="com.crm.qa.testcases.ContactsPageTest" name="verifyContactsLabelTest" time="0.094"/>
+  <testcase classname="com.crm.qa.testcases.ContactsPageTest" name="selectContactsTest" time="11.237">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at com.crm.qa.testcases.ContactsPageTest.selectContactsTest(ContactsPageTest.java:61)
+</failure>
+    <system-err>[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 81.0.4044.138 (since Google Chrome 81 is installed in your machine)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/tushar/.m2/repository/webdriver/chromedriver/linux64/81.0.4044.138/chromedriver
+May 14, 2020 3:58:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="com.crm.qa.testcases.ContactsPageTest" name="verifyCreateNewContact" time="32.232">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.name: first_name&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.name: first_name&apos; (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.crm.qa.pages.ContactsPage.createNewContact(ContactsPage.java:66)
+	at com.crm.qa.testcases.ContactsPageTest.verifyCreateNewContact(ContactsPageTest.java:73)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;first_name&apos;]&quot;}
+  (Session info: chrome=81.0.4044.129)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;tushar-VPCEH3AEN&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-99-generic&apos;, java.version: &apos;11.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: /tmp/.com.google.Chrome.1PBvpI}, goog:chromeOptions: {debuggerAddress: localhost:46621}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2c722d3bfb71b5267c86cef169318c99
+*** Element info: {Using=name, value=first_name}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 40 more
+</failure>
+    <system-out>Total no. of rows: 4
+Row no. 1
+</system-out>
+    <system-err>[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 81.0.4044.138 (since Google Chrome 81 is installed in your machine)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/tushar/.m2/repository/webdriver/chromedriver/linux64/81.0.4044.138/chromedriver
+May 14, 2020 3:58:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+</testsuite>

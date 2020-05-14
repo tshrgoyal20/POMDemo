@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Free CRM Application Test Automation Suite">
+<suite name="Free CRM Application Test Automation Suite" verbose="5">
 
    <listeners>
 	<listener class-name="com.crm.qa.base.CustomListener" />
