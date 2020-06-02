@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,11 +103,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="selectContactsTest">selectContactsTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="verifyCreateNewContact">verifyCreateNewContact</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Command_line_suite -->
@@ -146,6 +141,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="verifyCreateNewContact">verifyCreateNewContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.crm.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="verifyHomePageTitleTest">verifyHomePageTitleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -172,33 +172,15 @@
                   <a name="selectContactsTest">
                   </a> <!-- selectContactsTest -->
                   <span class="method-name">selectContactsTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.crm.qa.testcases.ContactsPageTest.selectContactsTest(ContactsPageTest.java:61)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 41 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCreateNewContact">
-                  </a> <!-- verifyCreateNewContact -->
-                  <span class="method-name">verifyCreateNewContact</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.name: first_name&apos; (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.crm.qa.pages.ContactsPage.createNewContact(ContactsPage.java:66)
-	at com.crm.qa.testcases.ContactsPageTest.verifyCreateNewContact(ContactsPageTest.java:73)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;first_name&apos;]&quot;}
-  (Session info: chrome=81.0.4044.129)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;User 1&apos;]//preceding-sibling::td/div&quot;}
+  (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;tushar-VPCEH3AEN&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-99-generic&apos;, java.version: &apos;11.0.7&apos;
+System info: host: &apos;tushar-VPCEH3AEN&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-101-generic&apos;, java.version: &apos;11.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: /tmp/.com.google.Chrome.1PBvpI}, goog:chromeOptions: {debuggerAddress: localhost:46621}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 2c722d3bfb71b5267c86cef169318c99
-*** Element info: {Using=name, value=first_name}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.TG7PFm}, goog:chromeOptions: {debuggerAddress: localhost:34295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 89095a811eb561819656793c84c36718
+*** Element info: {Using=xpath, value=//td[text()=&apos;User 1&apos;]//preceding-sibling::td/div}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -206,46 +188,18 @@ Session ID: 2c722d3bfb71b5267c86cef169318c99
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 40 more
+	at com.crm.qa.pages.ContactsPage.selectContactsByName(ContactsPage.java:54)
+	at com.crm.qa.testcases.ContactsPageTest.selectContactsTest(ContactsPageTest.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 ... Removed 41 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Command_line_suite-class-failed -->
-          <div class="suite-Command_line_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.crm.qa.testcases.LoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginPageTitleTest">
-                  </a> <!-- loginPageTitleTest -->
-                  <span class="method-name">loginPageTitleTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="signInTest">
-                  </a> <!-- signInTest -->
-                  <span class="method-name">signInTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-passed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -278,6 +232,28 @@ Session ID: 2c722d3bfb71b5267c86cef169318c99
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.crm.qa.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPageTitleTest">
+                  </a> <!-- loginPageTitleTest -->
+                  <span class="method-name">loginPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signInTest">
+                  </a> <!-- signInTest -->
+                  <span class="method-name">signInTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.crm.qa.testcases.ContactsPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -286,6 +262,13 @@ Session ID: 2c722d3bfb71b5267c86cef169318c99
                   <a name="verifyContactsLabelTest">
                   </a> <!-- verifyContactsLabelTest -->
                   <span class="method-name">verifyContactsLabelTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCreateNewContact">
+                  </a> <!-- verifyCreateNewContact -->
+                  <span class="method-name">verifyCreateNewContact</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -347,40 +330,40 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyCreateNewContact')
 data.setCell(0, 2, 'com.crm.qa.testcases.ContactsPageTest')
-data.setCell(0, 3, 32229);
+data.setCell(0, 3, 28468);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'selectContactsTest')
 data.setCell(1, 2, 'com.crm.qa.testcases.ContactsPageTest')
-data.setCell(1, 3, 11232);
+data.setCell(1, 3, 10172);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'signInTest')
 data.setCell(2, 2, 'com.crm.qa.testcases.LoginPageTest')
-data.setCell(2, 3, 4535);
+data.setCell(2, 3, 5484);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyContactsLinkTest')
 data.setCell(3, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(3, 3, 2887);
+data.setCell(3, 3, 1931);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyCorrectUsernameTest')
 data.setCell(4, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(4, 3, 1904);
+data.setCell(4, 3, 1373);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'loginPageTitleTest')
 data.setCell(5, 2, 'com.crm.qa.testcases.LoginPageTest')
-data.setCell(5, 3, 305);
+data.setCell(5, 3, 456);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyContactsLabelTest')
 data.setCell(6, 2, 'com.crm.qa.testcases.ContactsPageTest')
-data.setCell(6, 3, 94);
+data.setCell(6, 3, 123);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verifyHomePageTitleTest')
 data.setCell(7, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(7, 3, 9);
+data.setCell(7, 3, 28);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 53 seconds</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -413,105 +396,103 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">4581 ms</span>
+                <span class="method-start">5548 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">4890 ms</span>
+                <span class="method-start">6011 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">6990 ms</span>
+                <span class="method-start">8121 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signInTest</span>
-                <span class="method-start">9586 ms</span>
+                <span class="method-start">11584 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">14122 ms</span>
+                <span class="method-start">17069 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">16215 ms</span>
+                <span class="method-start">19193 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyHomePageTitleTest</span>
-                <span class="method-start">23587 ms</span>
+                <span class="method-start">26800 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">23597 ms</span>
+                <span class="method-start">26829 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">26702 ms</span>
+                <span class="method-start">29959 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCorrectUsernameTest</span>
-                <span class="method-start">32870 ms</span>
+                <span class="method-start">36640 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">34774 ms</span>
+                <span class="method-start">38014 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">37878 ms</span>
+                <span class="method-start">41117 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyContactsLinkTest</span>
-                <span class="method-start">44487 ms</span>
+                <span class="method-start">48100 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">47375 ms</span>
+                <span class="method-start">50031 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.ContactsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">50473 ms</span>
+                <span class="method-start">53125 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyContactsLabelTest</span>
-                <span class="method-start">59569 ms</span>
+                <span class="method-start">62713 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">59664 ms</span>
+                <span class="method-start">62837 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">61760 ms</span>
+                <span class="method-start">64930 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">selectContactsTest</span>
-                <span class="method-start">69414 ms</span>
+                <span class="method-start">73898 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">80651 ms</span>
+                <span class="method-start">84075 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">82739 ms</span>
+                <span class="method-start">86213 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyCreateNewContact</span>
-                <span class="method-start">95807 ms</span>
+                <span class="method-start">96681 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">128038 ms</span>
+                <span class="method-start">125150 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

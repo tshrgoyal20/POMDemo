@@ -8,7 +8,6 @@
           <include name="SetUp"/>
           <include name="verifyCreateNewContact"/>
           <include name="close"/>
-          <include name="selectContactsTest"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
     </classes>

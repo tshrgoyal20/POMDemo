@@ -9,29 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">130,154</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">127,298</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m0">selectContactsTest</a></td><td rowspan="1">1589452088381</td><td rowspan="1">11232</td></tr><tr class="failedeven"><td><a href="#m1">verifyCreateNewContact</a></td><td rowspan="1">1589452114774</td><td rowspan="1">32229</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m2">verifyContactsLabelTest</a></td><td rowspan="1">1589452078536</td><td rowspan="1">94</td></tr><tr class="passedodd"><td rowspan="3">com.crm.qa.testcases.HomePageTest</td><td><a href="#m3">verifyContactsLinkTest</a></td><td rowspan="1">1589452063454</td><td rowspan="1">2887</td></tr><tr class="passedodd"><td><a href="#m4">verifyCorrectUsernameTest</a></td><td rowspan="1">1589452051837</td><td rowspan="1">1904</td></tr><tr class="passedodd"><td><a href="#m5">verifyHomePageTitleTest</a></td><td rowspan="1">1589452042554</td><td rowspan="1">9</td></tr><tr class="passedeven"><td rowspan="2">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m6">loginPageTitleTest</a></td><td rowspan="1">1589452023548</td><td rowspan="1">305</td></tr><tr class="passedeven"><td><a href="#m7">signInTest</a></td><td rowspan="1">1589452028553</td><td rowspan="1">4535</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m0">selectContactsTest</a></td><td rowspan="1">1590838668195</td><td rowspan="1">10172</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m1">verifyContactsLabelTest</a></td><td rowspan="1">1590838657010</td><td rowspan="1">123</td></tr><tr class="passedeven"><td><a href="#m2">verifyCreateNewContact</a></td><td rowspan="1">1590838690978</td><td rowspan="1">28468</td></tr><tr class="passedodd"><td rowspan="3">com.crm.qa.testcases.HomePageTest</td><td><a href="#m3">verifyContactsLinkTest</a></td><td rowspan="1">1590838642397</td><td rowspan="1">1931</td></tr><tr class="passedodd"><td><a href="#m4">verifyCorrectUsernameTest</a></td><td rowspan="1">1590838630937</td><td rowspan="1">1373</td></tr><tr class="passedodd"><td><a href="#m5">verifyHomePageTitleTest</a></td><td rowspan="1">1590838621097</td><td rowspan="1">28</td></tr><tr class="passedeven"><td rowspan="2">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m6">loginPageTitleTest</a></td><td rowspan="1">1590838599845</td><td rowspan="1">456</td></tr><tr class="passedeven"><td><a href="#m7">signInTest</a></td><td rowspan="1">1590838605881</td><td rowspan="1">5484</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">com.crm.qa.testcases.ContactsPageTest#selectContactsTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at com.crm.qa.testcases.ContactsPageTest.selectContactsTest(ContactsPageTest.java:61)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 41 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.crm.qa.testcases.ContactsPageTest#verifyCreateNewContact</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.name: first_name&apos; (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.crm.qa.pages.ContactsPage.createNewContact(ContactsPage.java:66)
-	at com.crm.qa.testcases.ContactsPageTest.verifyCreateNewContact(ContactsPageTest.java:73)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;first_name&apos;]&quot;}
-  (Session info: chrome=81.0.4044.129)
+<h2>Command line test</h2><h3 id="m0">com.crm.qa.testcases.ContactsPageTest#selectContactsTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;User 1&apos;]//preceding-sibling::td/div&quot;}
+  (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;tushar-VPCEH3AEN&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-99-generic&apos;, java.version: &apos;11.0.7&apos;
+System info: host: &apos;tushar-VPCEH3AEN&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-101-generic&apos;, java.version: &apos;11.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: /tmp/.com.google.Chrome.1PBvpI}, goog:chromeOptions: {debuggerAddress: localhost:46621}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 2c722d3bfb71b5267c86cef169318c99
-*** Element info: {Using=name, value=first_name}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.TG7PFm}, goog:chromeOptions: {debuggerAddress: localhost:34295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 89095a811eb561819656793c84c36718
+*** Element info: {Using=xpath, value=//td[text()=&apos;User 1&apos;]//preceding-sibling::td/div}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -39,20 +29,15 @@ Session ID: 2c722d3bfb71b5267c86cef169318c99
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 40 more
+	at com.crm.qa.pages.ContactsPage.selectContactsByName(ContactsPage.java:54)
+	at com.crm.qa.testcases.ContactsPageTest.selectContactsTest(ContactsPageTest.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 ... Removed 41 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.crm.qa.testcases.ContactsPageTest#verifyContactsLabelTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.crm.qa.testcases.ContactsPageTest#verifyContactsLabelTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.crm.qa.testcases.ContactsPageTest#verifyCreateNewContact</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">com.crm.qa.testcases.HomePageTest#verifyContactsLinkTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">com.crm.qa.testcases.HomePageTest#verifyCorrectUsernameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m5">com.crm.qa.testcases.HomePageTest#verifyHomePageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>

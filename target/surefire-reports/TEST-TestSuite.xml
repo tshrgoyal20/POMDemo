@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="2" name="TestSuite" time="53.209" errors="0" skipped="0">
+<testsuite tests="8" failures="1" name="TestSuite" time="48.045" errors="0" skipped="0">
   <properties>
     <property name="DISPLAY" value=":0"/>
     <property name="CLUTTER_IM_MODULE" value="xim"/>
@@ -28,10 +28,10 @@
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="XDG_SESSION_DESKTOP" value="ubuntu"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/jenkins/job/FreeCRMProject/3/display/redirect?page=changes"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/jenkins/job/FreeCRMProject/6/display/redirect?page=changes"/>
     <property name="user.timezone" value="Asia/Kolkata"/>
     <property name="path.separator" value=":"/>
-    <property name="BUILD_TAG" value="jenkins-FreeCRMProject-3"/>
+    <property name="BUILD_TAG" value="jenkins-FreeCRMProject-6"/>
     <property name="TERM" value="xterm-256color"/>
     <property name="GTK_MODULES" value="gail:atk-bridge"/>
     <property name="MANDATORY_PATH" value="/usr/share/gconf/ubuntu.mandatory.path"/>
@@ -39,7 +39,7 @@
     <property name="PATH" value="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"/>
     <property name="QT_ACCESSIBILITY" value="1"/>
     <property name="DESKTOP_SESSION" value="ubuntu"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main /home/tushar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/TestMaven /home/tushar/.jenkins/war/WEB-INF/lib/remoting-4.3.jar /home/tushar/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.13.jar /home/tushar/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.13.jar 45377"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main /home/tushar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/TestMaven /home/tushar/.jenkins/war/WEB-INF/lib/remoting-4.3.jar /home/tushar/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.13.jar /home/tushar/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.13.jar 44065"/>
     <property name="HUDSON_URL" value="http://localhost:8080/jenkins/"/>
     <property name="XDG_CONFIG_DIRS" value="/etc/xdg/xdg-ubuntu:/etc/xdg"/>
     <property name="JENKINS_SERVER_COOKIE" value="3c894d2d46a4dd8a"/>
@@ -50,24 +50,24 @@
     <property name="line.separator" value="
 "/>
     <property name="COLORTERM" value="truecolor"/>
-    <property name="BUILD_URL" value="http://localhost:8080/jenkins/job/FreeCRMProject/3/"/>
-    <property name="SSH_AGENT_PID" value="1545"/>
+    <property name="BUILD_URL" value="http://localhost:8080/jenkins/job/FreeCRMProject/6/"/>
+    <property name="SSH_AGENT_PID" value="1506"/>
     <property name="SHLVL" value="1"/>
     <property name="M2_HOME" value="/home/tushar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/TestMaven"/>
     <property name="USER" value="tushar"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="sun.desktop" value="gnome"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="BUILD_DISPLAY_NAME" value="#3"/>
+    <property name="BUILD_DISPLAY_NAME" value="#6"/>
     <property name="WINDOWPATH" value="2"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="GJS_DEBUG_OUTPUT" value="stderr"/>
     <property name="HUDSON_SERVER_COOKIE" value="3c894d2d46a4dd8a"/>
     <property name="WORKSPACE_TMP" value="/home/tushar/.jenkins/workspace/FreeCRMProject@tmp"/>
     <property name="MAVEN_HOME" value="/home/tushar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/TestMaven"/>
-    <property name="GNOME_TERMINAL_SERVICE" value=":1.78"/>
+    <property name="GNOME_TERMINAL_SERVICE" value=":1.240"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="SESSION_MANAGER" value="local/tushar-VPCEH3AEN:@/tmp/.ICE-unix/1467,unix/tushar-VPCEH3AEN:/tmp/.ICE-unix/1467"/>
+    <property name="SESSION_MANAGER" value="local/tushar-VPCEH3AEN:@/tmp/.ICE-unix/1428,unix/tushar-VPCEH3AEN:/tmp/.ICE-unix/1428"/>
     <property name="DEFAULTS_PATH" value="/usr/share/gconf/ubuntu.default.path"/>
     <property name="maven3.interceptor.common" value="/home/tushar/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.13.jar"/>
     <property name="CLASSPATH" value=""/>
@@ -78,7 +78,7 @@
     <property name="XDG_CURRENT_DESKTOP" value="ubuntu:GNOME"/>
     <property name="os.name" value="Linux"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="BUILD_NUMBER" value="3"/>
+    <property name="BUILD_NUMBER" value="6"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="maven3.interceptor" value="/home/tushar/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.13.jar"/>
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
@@ -89,10 +89,10 @@
     <property name="java.class.version" value="55.0"/>
     <property name="DBUS_SESSION_BUS_ADDRESS" value="unix:path=/run/user/1000/bus"/>
     <property name="JOB_URL" value="http://localhost:8080/jenkins/job/FreeCRMProject/"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/jenkins/job/FreeCRMProject/3/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/jenkins/job/FreeCRMProject/6/display/redirect"/>
     <property name="GNOME_SHELL_SESSION_MODE" value="ubuntu"/>
     <property name="JENKINS_HOME" value="/home/tushar/.jenkins"/>
-    <property name="BUILD_ID" value="3"/>
+    <property name="BUILD_ID" value="6"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
     <property name="TEXTDOMAINDIR" value="/usr/share/locale/"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -101,7 +101,7 @@
     <property name="GTK_IM_MODULE" value="ibus"/>
     <property name="HUDSON_HOME" value="/home/tushar/.jenkins"/>
     <property name="PATH+MAVEN" value="/home/tushar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/TestMaven/bin"/>
-    <property name="OLDPWD" value="/home"/>
+    <property name="OLDPWD" value="/home/tushar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="SHELL" value="/bin/bash"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -110,7 +110,7 @@
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="JOB_DISPLAY_URL" value="http://localhost:8080/jenkins/job/FreeCRMProject/display/redirect"/>
     <property name="securerandom.source" value="file:/dev/./urandom"/>
-    <property name="os.version" value="4.15.0-99-generic"/>
+    <property name="os.version" value="4.15.0-101-generic"/>
     <property name="user.home" value="/home/tushar"/>
     <property name="USERNAME" value="tushar"/>
     <property name="_" value="/usr/bin/java"/>
@@ -140,7 +140,7 @@
     <property name="maven.home" value="/home/tushar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/TestMaven"/>
     <property name="JOB_BASE_NAME" value="FreeCRMProject"/>
     <property name="XMODIFIERS" value="@im=ibus"/>
-    <property name="GNOME_TERMINAL_SCREEN" value="/org/gnome/Terminal/screen/3a0b8e8b_77b0_4349_87a4_b86b0de200be"/>
+    <property name="GNOME_TERMINAL_SCREEN" value="/org/gnome/Terminal/screen/ef98ee2d_806f_42f1_981e_79efb36f5409"/>
     <property name="HOME" value="/home/tushar"/>
     <property name="java.vendor" value="Ubuntu"/>
     <property name="SSH_AUTH_SOCK" value="/run/user/1000/keyring/ssh"/>
@@ -149,41 +149,30 @@
     <property name="POM_DISPLAYNAME" value="CRMPRoject"/>
     <property name="sun.arch.data.model" value="64"/>
   </properties>
-  <testcase classname="com.crm.qa.testcases.LoginPageTest" name="loginPageTitleTest" time="0.308"/>
-  <testcase classname="com.crm.qa.testcases.LoginPageTest" name="signInTest" time="4.536"/>
-  <testcase classname="com.crm.qa.testcases.HomePageTest" name="verifyHomePageTitleTest" time="0.01"/>
-  <testcase classname="com.crm.qa.testcases.HomePageTest" name="verifyCorrectUsernameTest" time="1.905"/>
-  <testcase classname="com.crm.qa.testcases.HomePageTest" name="verifyContactsLinkTest" time="2.887"/>
-  <testcase classname="com.crm.qa.testcases.ContactsPageTest" name="verifyContactsLabelTest" time="0.094"/>
-  <testcase classname="com.crm.qa.testcases.ContactsPageTest" name="selectContactsTest" time="11.237">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.failNotEquals(Assert.java:969)
-	at org.testng.Assert.assertTrue(Assert.java:43)
-	at org.testng.Assert.assertTrue(Assert.java:53)
-	at com.crm.qa.testcases.ContactsPageTest.selectContactsTest(ContactsPageTest.java:61)
-</failure>
-    <system-err>[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 81.0.4044.138 (since Google Chrome 81 is installed in your machine)
-[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/tushar/.m2/repository/webdriver/chromedriver/linux64/81.0.4044.138/chromedriver
-May 14, 2020 3:58:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-</system-err>
-  </testcase>
-  <testcase classname="com.crm.qa.testcases.ContactsPageTest" name="verifyCreateNewContact" time="32.232">
-    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.name: first_name&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.name: first_name&apos; (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.crm.qa.pages.ContactsPage.createNewContact(ContactsPage.java:66)
-	at com.crm.qa.testcases.ContactsPageTest.verifyCreateNewContact(ContactsPageTest.java:73)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;first_name&apos;]&quot;}
-  (Session info: chrome=81.0.4044.129)
+  <testcase classname="com.crm.qa.testcases.LoginPageTest" name="loginPageTitleTest" time="0.468"/>
+  <testcase classname="com.crm.qa.testcases.LoginPageTest" name="signInTest" time="5.484"/>
+  <testcase classname="com.crm.qa.testcases.HomePageTest" name="verifyHomePageTitleTest" time="0.019"/>
+  <testcase classname="com.crm.qa.testcases.HomePageTest" name="verifyCorrectUsernameTest" time="1.376"/>
+  <testcase classname="com.crm.qa.testcases.HomePageTest" name="verifyContactsLinkTest" time="1.932"/>
+  <testcase classname="com.crm.qa.testcases.ContactsPageTest" name="verifyContactsLabelTest" time="0.124"/>
+  <testcase classname="com.crm.qa.testcases.ContactsPageTest" name="selectContactsTest" time="10.178">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;User 1&apos;]//preceding-sibling::td/div&quot;}
+  (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;tushar-VPCEH3AEN&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-99-generic&apos;, java.version: &apos;11.0.7&apos;
+System info: host: &apos;tushar-VPCEH3AEN&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-101-generic&apos;, java.version: &apos;11.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: /tmp/.com.google.Chrome.1PBvpI}, goog:chromeOptions: {debuggerAddress: localhost:46621}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 2c722d3bfb71b5267c86cef169318c99
-*** Element info: {Using=name, value=first_name}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.TG7PFm}, goog:chromeOptions: {debuggerAddress: localhost:34295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 89095a811eb561819656793c84c36718
+*** Element info: {Using=xpath, value=//td[text()=&apos;User 1&apos;]//preceding-sibling::td/div}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;User 1&apos;]//preceding-sibling::td/div&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;tushar-VPCEH3AEN&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-101-generic&apos;, java.version: &apos;11.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.TG7PFm}, goog:chromeOptions: {debuggerAddress: localhost:34295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 89095a811eb561819656793c84c36718
+*** Element info: {Using=xpath, value=//td[text()=&apos;User 1&apos;]//preceding-sibling::td/div}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -195,26 +184,18 @@ Session ID: 2c722d3bfb71b5267c86cef169318c99
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 40 more
+	at com.crm.qa.pages.ContactsPage.selectContactsByName(ContactsPage.java:54)
+	at com.crm.qa.testcases.ContactsPageTest.selectContactsTest(ContactsPageTest.java:63)
 </failure>
-    <system-out>Total no. of rows: 4
-Row no. 1
-</system-out>
-    <system-err>[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 81.0.4044.138 (since Google Chrome 81 is installed in your machine)
-[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/tushar/.m2/repository/webdriver/chromedriver/linux64/81.0.4044.138/chromedriver
-May 14, 2020 3:58:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+    <system-err>[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 83.0.4103.39 (since Google Chrome 83 is installed in your machine)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/tushar/.m2/repository/webdriver/chromedriver/linux64/83.0.4103.39/chromedriver
+ChromeDriver was started successfully.
+May 30, 2020 5:07:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
+  <testcase classname="com.crm.qa.testcases.ContactsPageTest" name="verifyCreateNewContact" time="28.464"/>
 </testsuite>

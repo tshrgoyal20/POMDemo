@@ -23,9 +23,6 @@ public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static ExcelDataProvider exceldata;
-	/*ExtentSparkReporter htmlreporter;
-	public static ExtentReports extent;
-	public static ExtentTest extenttest;*/
 	
 	public TestBase() {
 		
@@ -90,17 +87,5 @@ public class TestBase {
 			e.printStackTrace();
 		}
 	}
-	
-	/*public void setExtent()
-	{
-		htmlreporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/Reports/MyReport.html");
-		extent = new ExtentReports();
-		extent.attachReporter(htmlreporter);
-	}
-	
-	public void endReport()
-	{
-		extent.flush();
-	}*/
 
 }

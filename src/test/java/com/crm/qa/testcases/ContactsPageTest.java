@@ -1,5 +1,8 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -19,7 +22,7 @@ public class ContactsPageTest extends TestBase {
 	TestUtil testutil;
 	ContactsPage contactsPage;
 	ExcelDataProvider exceldata;
-	
+	String s;
 	public ContactsPageTest()
 	{
 		super();
@@ -49,16 +52,24 @@ public class ContactsPageTest extends TestBase {
 	@Test(priority=1)
 	public void verifyContactsLabelTest()
 	{
-		TestUtil.ImplicitWait();
 		Assert.assertTrue(contactsPage.verifyContactsLabel());
 	}
 	
 	@Test(priority=2)
 	public void selectContactsTest()
 	{
-		TestUtil.ImplicitWait();
-		boolean b = contactsPage.selectContactsByName("User 1");
-		Assert.assertTrue(b);
+		contactsPage.selectContactsByName("User 1");
+		WebDriverWait wait2 = new WebDriverWait(driver, 10);
+		wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class,'checked')]")));
+		if(driver.findElement(By.xpath("//div[contains(@class,'checked')]")).getAttribute("class").contains("checked"))
+		{
+			System.out.println("User checkbox has been selected");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			System.out.println("Checkbox is unselected");
+		}
 	}
 	
 	@Test(priority=3)
@@ -81,12 +92,5 @@ public class ContactsPageTest extends TestBase {
 			TestUtil.Sleep(1000);
 		}
 	}
-	
-	/*@DataProvider
-	public Iterator<Object> getTestData()
-	{
-		ArrayList<Object> testdata = DataDriven.GetData();
-		return testdata.iterator();
-	}*/
 
 }

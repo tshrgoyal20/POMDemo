@@ -11,12 +11,17 @@ import com.crm.qa.base.TestBase;
 import com.crm.qa.util.TestUtil;
 
 public class ContactsPage extends TestBase {
+	
+	WebDriverWait wait = new WebDriverWait(driver, 10);
 
 	@FindBy(xpath="//div[@id='dashboard-toolbar']/div[text()='Contacts']")
 	WebElement contactsLabel;
 	
 	@FindBy(xpath="//div[@id='dashboard-toolbar']//button[text()='New']")
 	WebElement newContactBtn;
+	
+	@FindBy(xpath="//div[@class='ui header item mb5 light-black'][text()='Create New Contact']")
+	WebElement newContactsLabel;
 	
 	@FindBy(name="first_name")
 	WebElement firstName;
@@ -47,12 +52,10 @@ public class ContactsPage extends TestBase {
 		return contactsLabel.isDisplayed();
 	}
 	
-	public boolean selectContactsByName(String name)
+	public void selectContactsByName(String name)
 	{
 		WebElement contactselect = driver.findElement(By.xpath("//td[text()='"+name+"']//preceding-sibling::td/div"));
 		contactselect.click();
-		return contactselect.isSelected();
-		//div[@id='dashboard-toolbar']//following-sibling::div[contains(@class,'main-content')]//div//
 	}
 	
 	public void clickOnNewContactButton()
@@ -60,9 +63,13 @@ public class ContactsPage extends TestBase {
 		newContactBtn.click();
 	}
 	
+	public boolean verifyNewContactLabel()
+	{
+		return newContactsLabel.isDisplayed();
+	}
+	
 	public void createNewContact(String fname, String lname, String comname, String statusValue)
 	{
-		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.visibilityOf(firstName));
 		firstName.sendKeys(fname);
 		lastName.sendKeys(lname);
@@ -75,11 +82,8 @@ public class ContactsPage extends TestBase {
 	
 	public String verifycreatedcontact()
 	{
-		WebDriverWait wait2 = new WebDriverWait(driver, 20);
-		wait2.until(ExpectedConditions.visibilityOf(createduser));
+		
+		wait.until(ExpectedConditions.visibilityOf(createduser));
 		return createduser.getText();
 	}
-	
-	
-	
 }
