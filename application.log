@@ -1,0 +1,2 @@
+2020-06-03 21:02:32,993 DEBUG [Finalizer] PoolingHttpClientConnectionManager:408 - Connection manager is shutting down
+2020-06-03 21:02:33,008 DEBUG [Finalizer] PoolingHttpClientConnectionManager:414 - Connection manager shut down

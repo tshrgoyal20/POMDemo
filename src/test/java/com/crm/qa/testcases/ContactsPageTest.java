@@ -36,7 +36,7 @@ public class ContactsPageTest extends TestBase {
 		contactsPage = new ContactsPage();
 		loginPage.clickOnLogin();
 		exceldata = new ExcelDataProvider("/home/tushar/eclipse-workspace/CRMPRoject/src/main/"
-				+ "java/com/crm/qa/testdata/ExcelData.xlsx");
+				+ "java/com/crm/qa/testdata/ExcelData.xlsx", "NewContact");
 		TestUtil.ImplicitWait();
 		homePage = loginPage.SignIn(prop.getProperty("username"), prop.getProperty("password"));
 		homePage.clickOnContactsLink();
@@ -81,9 +81,9 @@ public class ContactsPageTest extends TestBase {
 		{
 			contactsPage.clickOnNewContactButton();
 			System.out.println("Row no. "+row);
-			contactsPage.createNewContact(exceldata.getStringData("NewContact", row, 0),
-					exceldata.getStringData("NewContact", row, 1), exceldata.getStringData("NewContact", row, 2),
-					exceldata.getStringData("NewContact", row, 3));
+			contactsPage.createNewContact(exceldata.getStringData(row, 0),
+					exceldata.getStringData(row, 1), exceldata.getStringData(row, 2),
+					exceldata.getStringData(row, 3));
 		
 			contactsPage.verifycreatedcontact();
 			//Assert.assertEquals(contactsPage.verifycreatedcontact(), "Ram Kumar");

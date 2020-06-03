@@ -11,12 +11,8 @@ public class ExcelDataProvider extends TestBase {
 	
 	public static XSSFWorkbook wb;
 	public static XSSFSheet sheet;
-	public String fnamedata;
-	public String lnamedata;
-	public String companydata;
-	public String statusdata;
 	
-	public ExcelDataProvider(String path)
+	public ExcelDataProvider(String path, String sheetName)
 	{
 		File file  = new File(path);
 		
@@ -26,7 +22,7 @@ public class ExcelDataProvider extends TestBase {
 		
 		wb = new XSSFWorkbook(fis);
 		
-		sheet = wb.getSheet("NewContact");
+		sheet = wb.getSheet(sheetName);
 		
 		}
 		catch(Exception e)
@@ -35,14 +31,14 @@ public class ExcelDataProvider extends TestBase {
 		}
 	}
 	
-	public String getStringData(String sheetName, int row, int column)
+	public String getStringData(int row, int column)
 	{
-		return wb.getSheet(sheetName).getRow(row).getCell(column).getStringCellValue();
+		return sheet.getRow(row).getCell(column).getStringCellValue();
 	}
 
-	public double getNumericData(String sheetName, int row, int column)
+	public double getNumericData(int row, int column)
 	{
-		return wb.getSheet(sheetName).getRow(row).getCell(column).getNumericCellValue();
+		return sheet.getRow(row).getCell(column).getNumericCellValue();
 	}
 	
 }
