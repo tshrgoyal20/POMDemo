@@ -12,6 +12,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import com.crm.qa.util.ExcelDataProvider;
 import com.crm.qa.util.TestUtil;
@@ -29,7 +30,7 @@ public class TestBase {
 		prop = new Properties();
 		
 		try {
-			FileInputStream ip = new FileInputStream("/home/tushar/eclipse-workspace/CRMPRoject/src/main/java/com/"
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/"
 					+ "crm/qa/config/config.properties");
 			prop.load(ip);
 			
@@ -45,13 +46,19 @@ public class TestBase {
 	
 	public static void Initialization()
 	{
+		//String browserName = System.getProperty("browser");
 		String browserName = prop.getProperty("browser");
 		
-		if(browserName.equals("chrome"))
+		if(browserName.contains("chrome"))
 		{
 			System.setProperty("webdriver.chrome.silentOutput", "true");
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			ChromeOptions option = new ChromeOptions();
+			if(browserName.contains("headless"))
+			{
+				option.addArguments("headless");
+			}
+				WebDriverManager.chromedriver().setup();
+				driver = new ChromeDriver(option);
 		}
 		else if(browserName.equals("firefox"))
 		{
@@ -78,14 +85,16 @@ public class TestBase {
 		driver.close();
 	}
 	
-	public void failed(String testMethodName)
+	public String failed(String testMethodName)
 	{
+		String path = "./Screenshots/"+testMethodName+".jpg";
 		File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(file, new File("./Screenshots/"+testMethodName+".jpg"));
+			FileUtils.copyFile(file, new File(path));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		return path;
 	}
 
 }
