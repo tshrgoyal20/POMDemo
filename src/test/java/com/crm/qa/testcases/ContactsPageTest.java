@@ -37,9 +37,7 @@ public class ContactsPageTest extends TestBase {
 		loginPage.clickOnLogin();
 		exceldata = new ExcelDataProvider("/home/tushar/eclipse-workspace/CRMPRoject/src/main/"
 				+ "java/com/crm/qa/testdata/ExcelData.xlsx", "NewContact");
-		TestUtil.ImplicitWait();
 		homePage = loginPage.SignIn(prop.getProperty("username"), prop.getProperty("password"));
-		homePage.clickOnContactsLink();
 	}
 	
 	@AfterClass
@@ -52,6 +50,7 @@ public class ContactsPageTest extends TestBase {
 	@Test(priority=1)
 	public void verifyContactsLabelTest()
 	{
+		homePage.clickOnContactsLink();
 		Assert.assertTrue(contactsPage.verifyContactsLabel());
 	}
 	

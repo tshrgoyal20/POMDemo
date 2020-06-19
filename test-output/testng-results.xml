@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-17T23:37:26 IST" name="Free CRM Application Test Automation Suite" finished-at="2020-06-17T23:38:38 IST" duration-ms="72328">
+  <suite started-at="2020-06-19T17:49:50 IST" name="Free CRM Application Test Automation Suite" finished-at="2020-06-19T17:51:13 IST" duration-ms="82759">
     <groups>
     </groups>
-    <test started-at="2020-06-17T23:37:26 IST" name="Free CRM App Test Cases" finished-at="2020-06-17T23:38:38 IST" duration-ms="72328">
+    <test started-at="2020-06-19T17:49:50 IST" name="Free CRM App Test Cases" finished-at="2020-06-19T17:51:13 IST" duration-ms="82759">
       <class name="com.crm.qa.testcases.HomePageTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@6a370f4]" started-at="2020-06-17T23:37:40 IST" name="SetUp" finished-at="2020-06-17T23:37:49 IST" duration-ms="8734" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@6a6afff2]" started-at="2020-06-19T17:50:04 IST" name="SetUp" finished-at="2020-06-19T17:50:13 IST" duration-ms="9550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="verifyHomePageTitleTest()[pri:1, instance:com.crm.qa.testcases.HomePageTest@6a370f4]" started-at="2020-06-17T23:37:49 IST" name="verifyHomePageTitleTest" finished-at="2020-06-17T23:37:49 IST" duration-ms="10" status="PASS">
+        <test-method signature="verifyHomePageTitleTest()[pri:1, instance:com.crm.qa.testcases.HomePageTest@6a6afff2]" started-at="2020-06-19T17:50:13 IST" name="verifyHomePageTitleTest" finished-at="2020-06-19T17:50:13 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method signature="verifyCorrectUsernameTest()[pri:2, instance:com.crm.qa.testcases.HomePageTest@6a370f4]" started-at="2020-06-17T23:37:49 IST" name="verifyCorrectUsernameTest" finished-at="2020-06-17T23:37:51 IST" duration-ms="1709" status="PASS">
+        <test-method signature="verifyCorrectUsernameTest()[pri:2, instance:com.crm.qa.testcases.HomePageTest@6a6afff2]" started-at="2020-06-19T17:50:13 IST" name="verifyCorrectUsernameTest" finished-at="2020-06-19T17:50:15 IST" duration-ms="1788" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCorrectUsernameTest -->
-        <test-method signature="verifyContactsLinkTest()[pri:3, instance:com.crm.qa.testcases.HomePageTest@6a370f4]" started-at="2020-06-17T23:37:51 IST" name="verifyContactsLinkTest" finished-at="2020-06-17T23:37:51 IST" duration-ms="558" status="PASS">
+        <test-method signature="verifyContactsLinkTest()[pri:3, instance:com.crm.qa.testcases.HomePageTest@6a6afff2]" started-at="2020-06-19T17:50:15 IST" name="verifyContactsLinkTest" finished-at="2020-06-19T17:50:16 IST" duration-ms="667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactsLinkTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.crm.qa.testcases.HomePageTest@6a370f4]" started-at="2020-06-17T23:37:51 IST" name="close" finished-at="2020-06-17T23:37:54 IST" duration-ms="3091" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:com.crm.qa.testcases.HomePageTest@6a6afff2]" started-at="2020-06-19T17:50:16 IST" name="close" finished-at="2020-06-19T17:50:19 IST" duration-ms="3094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- com.crm.qa.testcases.HomePageTest -->
       <class name="com.crm.qa.testcases.ContactsPageTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@2abf4075]" started-at="2020-06-17T23:37:54 IST" name="SetUp" finished-at="2020-06-17T23:38:05 IST" duration-ms="10406" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@1649b0e6]" started-at="2020-06-19T17:50:19 IST" name="SetUp" finished-at="2020-06-19T17:50:28 IST" duration-ms="8903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="verifyContactsLabelTest()[pri:1, instance:com.crm.qa.testcases.ContactsPageTest@2abf4075]" started-at="2020-06-17T23:38:05 IST" name="verifyContactsLabelTest" finished-at="2020-06-17T23:38:05 IST" duration-ms="127" status="PASS">
+        <test-method signature="verifyContactsLabelTest()[pri:1, instance:com.crm.qa.testcases.ContactsPageTest@1649b0e6]" started-at="2020-06-19T17:50:28 IST" name="verifyContactsLabelTest" finished-at="2020-06-19T17:50:30 IST" duration-ms="2300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactsLabelTest -->
-        <test-method signature="selectContactsTest()[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@2abf4075]" started-at="2020-06-17T23:38:05 IST" name="selectContactsTest" finished-at="2020-06-17T23:38:15 IST" duration-ms="10071" status="FAIL">
+        <test-method signature="selectContactsTest()[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@1649b0e6]" started-at="2020-06-19T17:50:30 IST" name="selectContactsTest" finished-at="2020-06-19T17:50:45 IST" duration-ms="15039" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td[text()='User 1']//preceding-sibling::td/div"}
@@ -46,8 +46,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'tushar-VPCEH3AEN', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-106-generic', java.version: '11.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.iom3Eh}, goog:chromeOptions: {debuggerAddress: localhost:43495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: df1eb7255a2a2523f20a7a6271cf10ca
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.X38Wnu}, goog:chromeOptions: {debuggerAddress: localhost:44805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4c510b1cdad00e45ff2c13e6f443ba83
 *** Element info: {Using=xpath, value=//td[text()='User 1']//preceding-sibling::td/div}]]>
             </message>
             <full-stacktrace>
@@ -57,8 +57,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'tushar-VPCEH3AEN', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-106-generic', java.version: '11.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.iom3Eh}, goog:chromeOptions: {debuggerAddress: localhost:43495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: df1eb7255a2a2523f20a7a6271cf10ca
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.X38Wnu}, goog:chromeOptions: {debuggerAddress: localhost:44805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4c510b1cdad00e45ff2c13e6f443ba83
 *** Element info: {Using=xpath, value=//td[text()='User 1']//preceding-sibling::td/div}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -75,7 +75,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at com.crm.qa.pages.ContactsPage.selectContactsByName(ContactsPage.java:57)
-at com.crm.qa.testcases.ContactsPageTest.selectContactsTest(ContactsPageTest.java:61)
+at com.crm.qa.testcases.ContactsPageTest.selectContactsTest(ContactsPageTest.java:62)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -110,7 +110,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectContactsTest -->
-        <test-method signature="verifyCreateNewContact()[pri:3, instance:com.crm.qa.testcases.ContactsPageTest@2abf4075]" started-at="2020-06-17T23:38:15 IST" name="verifyCreateNewContact" finished-at="2020-06-17T23:38:36 IST" duration-ms="20243" status="FAIL">
+        <test-method signature="verifyCreateNewContact()[pri:3, instance:com.crm.qa.testcases.ContactsPageTest@1649b0e6]" started-at="2020-06-19T17:50:45 IST" name="verifyCreateNewContact" finished-at="2020-06-19T17:51:11 IST" duration-ms="25237" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: first_name' (tried for 10 second(s) with 500 milliseconds interval)]]>
@@ -120,7 +120,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at com.crm.qa.pages.ContactsPage.createNewContact(ContactsPage.java:73)
-at com.crm.qa.testcases.ContactsPageTest.verifyCreateNewContact(ContactsPageTest.java:84)
+at com.crm.qa.testcases.ContactsPageTest.verifyCreateNewContact(ContactsPageTest.java:86)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -155,8 +155,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'tushar-VPCEH3AEN', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-106-generic', java.version: '11.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.iom3Eh}, goog:chromeOptions: {debuggerAddress: localhost:43495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: df1eb7255a2a2523f20a7a6271cf10ca
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.X38Wnu}, goog:chromeOptions: {debuggerAddress: localhost:44805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4c510b1cdad00e45ff2c13e6f443ba83
 *** Element info: {Using=name, value=first_name}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -187,25 +187,25 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateNewContact -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@2abf4075]" started-at="2020-06-17T23:38:36 IST" name="close" finished-at="2020-06-17T23:38:38 IST" duration-ms="2093" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@1649b0e6]" started-at="2020-06-19T17:51:11 IST" name="close" finished-at="2020-06-19T17:51:13 IST" duration-ms="2092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
       <class name="com.crm.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@503d687a]" started-at="2020-06-17T23:37:26 IST" name="SetUp" finished-at="2020-06-17T23:37:31 IST" duration-ms="4762" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@366647c2]" started-at="2020-06-19T17:49:50 IST" name="SetUp" finished-at="2020-06-19T17:49:56 IST" duration-ms="5334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@503d687a]" started-at="2020-06-17T23:37:31 IST" name="loginPageTitleTest" finished-at="2020-06-17T23:37:31 IST" duration-ms="128" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@366647c2]" started-at="2020-06-19T17:49:56 IST" name="loginPageTitleTest" finished-at="2020-06-19T17:49:56 IST" duration-ms="389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method signature="signInTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@503d687a]" started-at="2020-06-17T23:37:31 IST" name="signInTest" finished-at="2020-06-17T23:37:38 IST" duration-ms="7463" status="PASS">
+        <test-method signature="signInTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@366647c2]" started-at="2020-06-19T17:49:56 IST" name="signInTest" finished-at="2020-06-19T17:50:02 IST" duration-ms="5369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@503d687a]" started-at="2020-06-17T23:37:38 IST" name="close" finished-at="2020-06-17T23:37:40 IST" duration-ms="2104" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@366647c2]" started-at="2020-06-19T17:50:02 IST" name="close" finished-at="2020-06-19T17:50:04 IST" duration-ms="2104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

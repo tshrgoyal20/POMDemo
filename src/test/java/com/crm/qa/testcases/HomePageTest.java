@@ -29,7 +29,6 @@ public class HomePageTest extends TestBase {
 		Initialization();
 		loginPage = new LoginPage();
 		loginPage.clickOnLogin();
-		TestUtil.ImplicitWait();
 		homePage = loginPage.SignIn(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
